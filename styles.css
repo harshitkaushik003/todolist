@@ -66,6 +66,7 @@ body{
     }
 }
 
+
 /* main section */
 #main{
     height: 100vh;
@@ -185,4 +186,24 @@ ul li:hover .cross{
 
 .cross:hover{
     color: red;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-size:contain;
+        position: relative;
+        background-repeat: repeat;
+    }
+
+    #todo li{
+        width: 369px;
+    }
+
+    #task-counter{
+        width: 387px;
+    }
+    
+    .fun-icon{
+        left: 170px;
+    }
 }
