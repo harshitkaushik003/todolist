@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/03f8fd8052.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <!-- The navbar here is mainly for the wallpapers -->
+    <section id="nav">
+        <span>TODO List</span>
+        <div id="themes">
+            <span>Themes:</span>
+            <span id="bars-icon"><i class="fa-solid fa-bars"></i></span> <!--click here to see the list of wallpapers-->
+            <ul>
+                <li class="themes-list">Countryside</li>
+                <li class="themes-list">Mountains</li>
+                <li class="themes-list">Road</li>
+                <li class="themes-list">Room</li>
+                <li class="themes-list">Streets</li>
+                <li class="themes-list">Swordsmen</li>
+                <li class="themes-list">Wall Maria</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Main section -->
+    <section id="main">
+        <div id="todo">
+            <span id="task-icon"><i class="fa-solid fa-list-check"></i></span>
+            <!-- input for the todo -->
+            <input id="todo-input" type="text" placeholder="add a task">
+            <div id="task-counter">
+                <!-- counter -->
+                <span>Total-tasks:</span><span id="count">0</span>
+                <!-- button to complete all  -->
+                <span id="complete" class="fun-icon"><i class="fa-solid fa-circle-check"></i></span>
+                <!-- button to uncomplete all  -->
+                <span id="uncomplete" class="fun-icon"><i class="fa-regular fa-circle-check"></i></span>
+                <!-- button to clear all -->
+                <span id="clear-all" class="fun-icon"><i class="fa-solid fa-trash"></i></span>
+            </div>
+            <!-- the list  -->
+            <ul id="list">
+                <!-- <li>
+                    <input class="checkbox" id='task1' type="checkbox">
+                    <label for='task1'>First</label>
+                    <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
