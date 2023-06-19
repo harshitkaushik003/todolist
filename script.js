@@ -155,6 +155,7 @@ uncompleteAllButton.addEventListener('click', function(){
 
 })
 
+// for add button 
 addButton.addEventListener('click', function(){
     const taskName = input.value;
     if(!taskName){
