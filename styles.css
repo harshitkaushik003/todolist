@@ -206,4 +206,14 @@ ul li:hover .cross{
     .fun-icon{
         left: 170px;
     }
+
+    #task-icon{
+        top: 37px;
+        left: 17px;
+    }
+
+    #todo input{
+        width: 346px;
+        margin-right: 44px;
+    }
 }
