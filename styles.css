@@ -98,12 +98,20 @@ body{
     font-family: var(--font);
 }
 
+#add-icon{
+    position: relative;
+    left: 426px;
+    bottom: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 #task-counter{
     background-color: rgb(0, 0, 0, 0.7);
     width: 460px;
     height: 40px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: -8px;
 
 }
 #task-counter span{

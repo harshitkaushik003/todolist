@@ -37,6 +37,7 @@ const deleteButton = document.getElementsByClassName('delete');
 const completeAllButton = document.getElementById('complete');
 const uncompleteAllButton = document.getElementById('uncomplete');
 const clearAll = document.getElementById('clear-all');
+const addButton = document.getElementById('add-icon');
 
 // this function will add task list to the DOM 
 function addTaskDIV(task){
@@ -106,6 +107,7 @@ function handleClickEvents(e){
     }
 }
 
+
 // handling keypress 
 function handleKeyPress(e){
     if(e.key === 'Enter'){
@@ -150,5 +152,22 @@ uncompleteAllButton.addEventListener('click', function(){
         tasks[i].done = false;
     }
     renderList();
+
+})
+
+addButton.addEventListener('click', function(){
+    const taskName = input.value;
+    if(!taskName){
+        alert("Task cannot be empty");
+        return;
+    }
+
+    const task = {
+        taskName, 
+        id : Date.now().toString(),
+        done: false     
+    };
+    input.value = '';
+    addTask(task); 
 
 })
