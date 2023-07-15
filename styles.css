@@ -226,7 +226,7 @@ ul li:hover .cross{
     }
 }
 
-@media screen and (min-width:414px){
+@media screen and (min-width:414px) and (max-width:600px){
 
     #add-icon{
         left: 363px;
