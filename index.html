@@ -51,11 +51,12 @@
             <!-- the list  -->
             <ul id="list">
                 <!-- <li>
-                    <input class="checkbox" id='task1' type="checkbox">
-                    <label for='task1'>First</label>
-                    <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+                    <input class="custom-checkbox" id='${task.id}' type="checkbox" ${task.done ? 'checked': ''}>
+                    <label for='${task.id}'>${task.taskName}</label>
+                    <span class="cross"><i class="fa-solid fa-xmark delete" data-id="${task.id}"></i></span>
                 </li> -->
             </ul>
+            
         </div>
     </section>
     <script src="script.js"></script>

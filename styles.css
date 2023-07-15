@@ -225,3 +225,24 @@ ul li:hover .cross{
         margin-right: 44px;
     }
 }
+
+@media screen and (min-width:414px){
+
+    #add-icon{
+        left: 363px;
+    }
+
+    .custom-checkbox{
+        right: 166px;
+    }
+    
+    li label{
+        position: relative;
+        bottom: 30px;
+        left: 28px;
+    }
+
+    .cross{
+        top: 10px;
+    }
+}
