@@ -26,12 +26,14 @@
     margin-left: 10px;
 }
 
+/* these themes are to be placed in a vertical order in the navbar */
 #themes{
     position: absolute;
     right: 47px;
     top: 9px;
 }
 
+/* the hamburger icon */
 #themes #bars-icon{
     position: relative;
     top: 4px;
@@ -85,6 +87,7 @@ body{
     border-radius: 20px;
 }
 
+/* input area  */
 #todo-input{
     width: 412px;
     height: 40px;
@@ -98,6 +101,7 @@ body{
     font-family: var(--font);
 }
 
+/* icon for adding the task to dom  */
 #add-icon{
     position: relative;
     left: 426px;
@@ -106,6 +110,7 @@ body{
     cursor: pointer;
 }
 
+/* counter to the task */
 #task-counter{
     background-color: rgb(0, 0, 0, 0.7);
     width: 460px;
@@ -114,6 +119,7 @@ body{
     margin-top: -8px;
 
 }
+
 #task-counter span{
     font-family: var(--font);
     color: white;
@@ -128,12 +134,15 @@ body{
     cursor: pointer;
 } */
 
+
+/* icon for other buttons  */
 .fun-icon{
     position: relative;
     left: 236px;
     cursor: pointer;
     font-size: 17px;
 }
+
 
 #list{
     margin-top: 10px;
@@ -181,6 +190,7 @@ body{
     text-decoration: line-through;
 }
 
+/* icon for deleting icon  */
 .cross{
     position: absolute;
     right: 20px;
@@ -196,6 +206,7 @@ ul li:hover .cross{
     color: red;
 }
 
+/* media queries */
 @media screen and (max-width:600px) {
     body{
         background-size:contain;
